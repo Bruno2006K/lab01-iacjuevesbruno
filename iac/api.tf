@@ -1,11 +1,9 @@
-# Start a container
-resource "docker_container" "ubuntu" {
-  name  = "api-localhost"
+resource "docker_container" "api" {
+  name  = "api-${terraform.workspace}"
   image = "lab/api"
 
-  port{
-    internal = "80"
-    external = "4001"
+  ports {
+    internal = 3000
+    external = var.api_port[terraform.workspace]
   }
-  
 }
