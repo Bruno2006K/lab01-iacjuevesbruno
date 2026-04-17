@@ -1,5 +1,12 @@
-# Laboratorio 01 - IaC
-## Despliegue de Aplicaciones Web con Docker
-- **Web 01:** Puerto 4000
-- **Web 02:** Puerto 4001
-- Limpieza de contenedores realizada el Fri Apr 10 01:55:52 UTC 2026
+# iac-lab01-martes
+
+Tenemos código de una aplicación web.
+Se compone por un archivo HTML que tiene como contenido: WEB01
+
+Quiero poder publicar esta web, especificamente una sola copia como primera instancia
+
+TAREA:
+- Desplegar dos web, mostrar Web01, y Web02 como contenido
+- Los puertos deben estar configurados en 4000 y 4001
+- Gestionar carpetas para orden
+- Hacer uso de Gitflow/Conventional Commits

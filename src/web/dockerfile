@@ -1,0 +1,12 @@
+FROM node:alpine
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+EXPOSE 80
+
+CMD ["node", "index.js"]
+
+# docker build -t lab/web .
+# docker run -p 4001:80 lab/web
